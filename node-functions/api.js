@@ -1,4 +1,4 @@
-// 简化版API - 测试用
+// 简化版API - 测试用 (稳定版本)
 const Koa = require('koa');
 const app = new Koa();
 
