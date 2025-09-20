@@ -1,4 +1,4 @@
-// EdgeOne Pages 云函数入口文件
+// EdgeOne Pages 云函数入口文件 - 根路径版本
 import Koa from 'koa';
 import Router from '@koa/router';
 
