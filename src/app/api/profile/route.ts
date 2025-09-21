@@ -48,13 +48,10 @@ export async function GET() {
   });
 }
 
-export async function POST(request: Request) {
-  const body = await request.json();
-  
+export async function POST() {
   return NextResponse.json({
     success: true,
-    message: "数据接收成功",
-    received: body,
+    message: "POST方法支持",
     timestamp: new Date().toISOString()
   });
 }

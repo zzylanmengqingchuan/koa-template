@@ -166,7 +166,7 @@ export default function Home() {
                     const response = await fetch('/api/profile');
                     const data = await response.json();
                     alert(JSON.stringify(data, null, 2));
-                  } catch (error) {
+                  } catch {
                     alert('接口暂未实现，但页面展示功能正常！');
                   }
                 }}
