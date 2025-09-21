@@ -1,8 +1,14 @@
-// 最简单的测试函数
+// 最简单的EdgeOne Pages函数
 module.exports = (req, res) => {
   res.writeHead(200, {
-    'Content-Type': 'text/plain',
+    'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*'
   });
-  res.end('Hello World from EdgeOne Pages!');
+  
+  res.end(JSON.stringify({
+    success: true,
+    message: "SUCCESS! EdgeOne Pages is working!",
+    timestamp: new Date().toISOString(),
+    url: req.url
+  }));
 };
