@@ -147,32 +147,32 @@ export default function Home() {
             </div>
           </div>
 
-          {/* API 测试区域 */}
+          {/* 联系方式 */}
           <div className="text-center">
-            <h2 className="text-2xl font-bold mb-6">API 接口测试</h2>
+            <h2 className="text-2xl font-bold mb-6">联系方式</h2>
             <Card className="bg-gray-900 border-gray-700 p-6 max-w-2xl mx-auto">
-              <p className="text-gray-300 mb-4">
-                测试个人信息 API 接口：
-              </p>
-              <div className="bg-gray-800 p-4 rounded-lg mb-4">
-                <code className="text-green-400 text-sm">
-                  GET /api/profile
-                </code>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div>
+                  <h3 className="font-semibold mb-2 text-white">邮箱</h3>
+                  <p className="text-gray-300">your-email@example.com</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 text-white">位置</h3>
+                  <p className="text-gray-300">中国</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 text-white">GitHub</h3>
+                  <a href="https://github.com/zzylanmengqingchuan" target="_blank" className="text-blue-400 hover:text-blue-300">
+                    @zzylanmengqingchuan
+                  </a>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-2 text-white">博客</h3>
+                  <a href="https://blog.csdn.net/binhyun?type=blog" target="_blank" className="text-blue-400 hover:text-blue-300">
+                    CSDN 技术博客
+                  </a>
+                </div>
               </div>
-              <Button 
-                className="bg-[#1c66e5] hover:bg-[#1557d1] text-white"
-                onClick={async () => {
-                  try {
-                    const response = await fetch('/api/profile');
-                    const data = await response.json();
-                    alert(JSON.stringify(data, null, 2));
-                  } catch {
-                    alert('接口暂未实现，但页面展示功能正常！');
-                  }
-                }}
-              >
-                测试 API
-              </Button>
             </Card>
           </div>
         </div>
