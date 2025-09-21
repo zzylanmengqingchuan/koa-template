@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/koa": {
+      "handler": "koa/[[default]].js"
+    },
+    "api/simple": {
+      "handler": "simple/[[default]].js"
+    }
+  }
+}

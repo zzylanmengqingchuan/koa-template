@@ -1,4 +1,4 @@
-// EdgeOne Pages Express 应用
+// EdgeOne Pages Express 应用 - 官方格式
 const express = require('express');
 const app = express();
 
